@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'C:\Users\Michor.Lu\code\sgtk\bbf-config-override\python\bbf_config_override\ui\choose_config.ui'
+#
+# Created: Tue Dec 06 16:06:45 2016
+#      by: pyside-uic 0.2.14 running on PySide 1.2.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PySide import QtCore, QtGui
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(634, 214)
+        self.verticalLayout = QtGui.QVBoxLayout(Form)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.groupBox_2 = QtGui.QGroupBox(Form)
+        self.groupBox_2.setTitle("")
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.horizontalLayout = QtGui.QHBoxLayout(self.groupBox_2)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label = QtGui.QLabel(self.groupBox_2)
+        self.label.setObjectName("label")
+        self.horizontalLayout.addWidget(self.label)
+        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem)
+        self.config_combobox = QtGui.QComboBox(self.groupBox_2)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.config_combobox.sizePolicy().hasHeightForWidth())
+        self.config_combobox.setSizePolicy(sizePolicy)
+        self.config_combobox.setObjectName("config_combobox")
+        self.horizontalLayout.addWidget(self.config_combobox)
+        self.verticalLayout.addWidget(self.groupBox_2)
+        self.groupBox = QtGui.QGroupBox(Form)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.groupBox.sizePolicy().hasHeightForWidth())
+        self.groupBox.setSizePolicy(sizePolicy)
+        self.groupBox.setObjectName("groupBox")
+        self.gridLayout = QtGui.QGridLayout(self.groupBox)
+        self.gridLayout.setObjectName("gridLayout")
+        self.label_5 = QtGui.QLabel(self.groupBox)
+        self.label_5.setObjectName("label_5")
+        self.gridLayout.addWidget(self.label_5, 2, 0, 1, 1)
+        self.label_3 = QtGui.QLabel(self.groupBox)
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 1, 0, 1, 1)
+        self.config_path_lbl = QtGui.QLabel(self.groupBox)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.config_path_lbl.sizePolicy().hasHeightForWidth())
+        self.config_path_lbl.setSizePolicy(sizePolicy)
+        self.config_path_lbl.setObjectName("config_path_lbl")
+        self.gridLayout.addWidget(self.config_path_lbl, 0, 1, 1, 1)
+        self.label_2 = QtGui.QLabel(self.groupBox)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 0, 0, 1, 1)
+        self.repo_path_lbl = QtGui.QLabel(self.groupBox)
+        self.repo_path_lbl.setObjectName("repo_path_lbl")
+        self.gridLayout.addWidget(self.repo_path_lbl, 1, 1, 1, 1)
+        self.remote_lbl = QtGui.QLabel(self.groupBox)
+        self.remote_lbl.setObjectName("remote_lbl")
+        self.gridLayout.addWidget(self.remote_lbl, 2, 1, 1, 1)
+        self.verticalLayout.addWidget(self.groupBox)
+        self.horizontalLayout_2 = QtGui.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem1)
+        self.go_btn = QtGui.QPushButton(Form)
+        self.go_btn.setObjectName("go_btn")
+        self.horizontalLayout_2.addWidget(self.go_btn)
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        Form.setWindowTitle(QtGui.QApplication.translate("Form", "Form", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("Form", "Choose config:", None, QtGui.QApplication.UnicodeUTF8))
+        self.groupBox.setTitle(QtGui.QApplication.translate("Form", "Info", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_5.setText(QtGui.QApplication.translate("Form", "Remote:", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_3.setText(QtGui.QApplication.translate("Form", "Repo path:", None, QtGui.QApplication.UnicodeUTF8))
+        self.config_path_lbl.setText(QtGui.QApplication.translate("Form", "--", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_2.setText(QtGui.QApplication.translate("Form", "Config path:", None, QtGui.QApplication.UnicodeUTF8))
+        self.repo_path_lbl.setText(QtGui.QApplication.translate("Form", "--", None, QtGui.QApplication.UnicodeUTF8))
+        self.remote_lbl.setText(QtGui.QApplication.translate("Form", "--", None, QtGui.QApplication.UnicodeUTF8))
+        self.go_btn.setText(QtGui.QApplication.translate("Form", "Ok", None, QtGui.QApplication.UnicodeUTF8))
+

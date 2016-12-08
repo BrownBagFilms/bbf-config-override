@@ -1,1 +1,2 @@
-# bbf-config-override
+# Welcome to the Shotgun Pipeline Toolkit!
+
